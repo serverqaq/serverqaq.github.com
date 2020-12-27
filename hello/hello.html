@@ -2,9 +2,103 @@
 <html>
     <head>
         <title>My web page!</title>
+        <style>
+            h1 {
+                color:aquamarine
+            }
+            h2 {
+                color:aquamarine
+            }
+            div {
+                background-color:#a1d6ab;
+                window: 100px;
+                height: 400px;
+                margin: 30px;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+                border: 3px solid white;
+            }
+            table{
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                    width: 50%;
+            }
+
+            th, td{
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    padding: 5px;
+            }
+            th {
+                background-color: gray;
+                
+            }
+            #top {
+                font-size: 50px;
+            }
+            .name{
+                font-weight: bold;
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1 style="color:#a1d6ab;text-align:center">Big head</h1>
+        <h1>Big head</h1>
+        <h2>big head</h2>
+        <h3>Mid head</h3>
+        <h4>mid head</h4>
+        <h5>Small head</h5>
+        <h6>small head</h6>
         Hello, world!
+        <p>Unorderd list: </p>
+        <ul>
+            <li>1st</li>
+            <li>2nd</li>
+        </ul>
+        <p>Ordered list: </p>
+        <ol>
+            <li>1st</li>
+            <li>2nd</li>
+        </ol>
+        <p>An img: </p>
+        <img src='../img/bg-img/2.jpg' width = 50%>
+        
+        <p>A table: </p>
+        <table>
+            <tr>
+                <th>1st</th>
+                <th>2nd</th>
+                <th>3rd</th>
+            </tr>
+            <tr>
+                <td>1st</th>
+                <td>2nd</th>
+                <td>3rd</th>
+            </tr>
+            <tr>
+                <td>1st</th>
+                <td>2nd</th>
+                <td>3rd</th>
+            </tr>
+            <tr>
+                <td>1st</th>
+                <td>2nd</th>
+                <td>3rd</th>
+            </tr>
+        </table>
+        <p>Form:</p>
+        <form>
+            <input type = "text" placeholder="full name" name="name">
+            <button>Submit!</button>
+        </form>
+
+        <div>
+            Hello, world!
+        </div>
+        <div id = "top">
+            Ben zhu nu <span class ="name">Zhui</span> ben
+        </div>
     </body>
 
 </html>
