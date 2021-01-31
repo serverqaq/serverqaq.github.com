@@ -1,0 +1,1 @@
+console.log("Welcome, DaZhu. This is js world")
