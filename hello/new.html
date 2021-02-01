@@ -4,6 +4,19 @@
         <title>
             30DaysOfScript: Inline Script
         </title>
+        
+        <script>
+            function greet(){
+                let name = document.querySelector('#name').value;
+                alert("hello, " + name);
+            }
+            function listen(){
+                document.querySelector('form').addEventListener("submit", greet);
+            }
+            document.addEventListener("DOMContentLoaded", listen);
+            
+
+        </script>
     </head>
     <body>
         <button onclick="alert('Welcome to 30DayOfScript');"> Click Me</button>
@@ -15,5 +28,20 @@
         </script>
         <script src = "./intro.js"></script>
         <script src = "./intro_v1.js"></script>
+
+        <!-- <form action="https://www.google.com/search" method="get">
+            <input name="q" type="search">
+            <input type="submit" value="Search">
+        </form> -->
+        <!-- google does not support post method -->
+        <!-- <form action="https://www.google.com/search" method="post"> 
+            <input name="q" type="search">
+            <input type="submit" value="Search">
+        </form> -->
+
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="What's your name?" type="text">
+            <input type="submit" value="Greet Me">
+        </form>
     </body>
 </html>
