@@ -1,237 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Title -->
-    <title>画家王丹一</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/bg-img/6.jpg">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XD2RVWDXLJ"></script>
-    <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Danyi Wang — Biography, Awards, Press, and Academic Papers">
+  <title>About — Danyi Wang</title>
+  <link rel="icon" href="img/bg-img/6.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XD2RVWDXLJ"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-XD2RVWDXLJ');
-    </script>
+  </script>
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+
+  <!-- ── Navigation ── -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html"
+         data-en="Danyi Wang" data-cn="王丹一">Danyi Wang</a>
+
+      <nav class="nav-links">
+        <a href="index.html" data-en="Home" data-cn="主页">Home</a>
+        <a href="works.html" data-en="Works" data-cn="作品">Works</a>
+        <a href="about.html" class="active" data-en="About" data-cn="简介">About</a>
+        <a href="contact.html" data-en="Contact" data-cn="联系">Contact</a>
+        <button id="lang-toggle" class="lang-toggle">中文</button>
+      </nav>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <!-- /Preloader -->
+  </header>
 
-    <!-- Top Search Form Area -->
-    <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <nav class="nav-drawer">
+    <a href="index.html" data-en="Home" data-cn="主页">Home</a>
+    <a href="works.html" data-en="Works" data-cn="作品">Works</a>
+    <a href="about.html" data-en="About" data-cn="简介">About</a>
+    <a href="contact.html" data-en="Contact" data-cn="联系">Contact</a>
+    <button id="lang-toggle-mobile" class="lang-toggle">中文</button>
+  </nav>
+
+  <!-- ── Page Header ── -->
+  <div class="page-header">
+    <div class="container">
+      <p class="section-subtitle" data-en="The Artist" data-cn="艺术家">The Artist</p>
+      <h1 data-en="About" data-cn="简介">About</h1>
     </div>
+  </div>
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-        <!-- Main Header Start -->
-        <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+  <!-- ── Biography ── -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
 
-                        <!-- Logo -->
-                        <!-- <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a> -->
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-                            <!-- Menu Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul id="nav">
-                                    <li><a href="./index.html">主页</a></li>
-<!--
-                                    <li><a href="#">相关出版物图片</a>
-                                        <ul class="dropdown">
-                                            <li><a href="./index.html">- 主页</a></li>
-                                            <li><a href="./about.html">- 业界活动</a></li>
-                                            <li><a href="./gallery.html">- 论文</a></li>
-                               
-                                            <li><a href="./contact.html">- 联系我们</a></li>
-                                             <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li> 
-                                        </ul>
-                                    </li>
--->                                 <li><a href="./hall.html">画廊</a></li>
-                                    <li><a href="./press.html">相关出版物图片</a></li>
-                                    <li class="active"><a href="./about.html">业界活动</a></li>
-                                    <li><a href="./gallery.html">论文</a></li>
-                          
-                                    <li><a href="./contact.html">联系我们</a></li>
-                                    <li><a href="./en/about.html">English</a></li>
-                                </ul>
-
-                                <!-- Search Icon -->
-                                <!-- <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div> -->
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        <!-- Left: Image -->
+        <div class="about-image fade-up">
+          <img src="img/bg-img/13.jpg" alt="Danyi Wang">
         </div>
-    </header>
-    <!-- Header Area End -->
 
-    <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/7.jpeg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">业界活动</h2>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> 主页</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">业界活动</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+        <!-- Right: Bio content -->
+        <div class="about-content">
+
+          <div class="fade-up">
+            <p class="section-subtitle" data-en="Biography" data-cn="人物简介">Biography</p>
+            <h2 class="section-title" data-en="Danyi Wang" data-cn="王丹一">Danyi Wang</h2>
+            <div class="bio-text">
+              <p data-en="Zhi Wang, known as Danyi Wang (also Ye Wang), was born in 1957 in Bozhou City, Anhui Province. She graduated from the Institute of Ancient Books of Jilin University and is a member of the China Artists Association and dean of Jingzhong Academy of Painting and Calligraphy."
+                 data-cn="王志，号王丹一，又号野王，1957年生于安徽省亳州市。毕业于吉林大学古籍研究所，现为中国美术家协会会员，景众书画院院长。">
+                Zhi Wang, known as Danyi Wang (also Ye Wang), was born in 1957 in Bozhou City, Anhui Province. She graduated from the Institute of Ancient Books of Jilin University and is a member of the China Artists Association and dean of Jingzhong Academy of Painting and Calligraphy.
+              </p>
+              <br>
+              <p data-en="Her practice spans oil painting, traditional Chinese ink painting, printmaking, Iwasai mineral painting, sketch, and calligraphy. Her work is rooted in the classical Chinese literati tradition while engaging with contemporary visual language. Multiple works have been selected for national exhibitions organized by the China Artists Association and the Ministry of Culture and Tourism."
+                 data-cn="她的创作跨越油画、国画、版画、岩彩、速写及书法等多种媒介。作品植根于中国古典文人传统，同时与当代视觉语言相融合。多件作品入选中国美术家协会及文化和旅游部主办的全国性展览。">
+                Her practice spans oil painting, traditional Chinese ink painting, printmaking, Iwasai mineral painting, sketch, and calligraphy. Her work is rooted in the classical Chinese literati tradition while engaging with contemporary visual language. Multiple works have been selected for national exhibitions organized by the China Artists Association and the Ministry of Culture and Tourism.
+              </p>
             </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Area End -->
+          </div>
 
-    <!-- About Us Area Start -->
-    <div class="about-us-area section-padding-80-0 clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="about-us-content mb-80">
-                        <h3 class="wow fadeInUp" data-wow-delay="100ms">获奖作品</h3>
-                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">
-                        <p><a href="https://www.caanet.org.cn/newsdetail.mx?id=6892">《海的女儿》 入选 第二届中国插图艺术展 （中国美术家协会主办）</a></p>
-
-<p> <a href="https://www.caanet.org.cn/newsdetail.mx?id=7011"> 《月光吟》 入选 悲鸿精神——第三届全国中国画作品展 （中国美术家协会主办）</a></p>
-
-<p> <a href="https://www.caanet.org.cn/newsdetail.mx?id=7279">《月光曲》 入选 第十三届全国美术作品展览 （中国文化和旅游部 中国文联 中国美术家协会 联合主办）</a></p>
-
-<p><a href="https://www.caanet.org.cn/newsdetail.mx?id=7393">《为了忘却的记忆》 入选 第二十三届全国版画作品展 （中国美术家协会主办）</a></p>
-                       
-<p> <a href="https://www.caanet.org.cn/newsdetail.mx?id=3135">《升庵诗话》 入选 升庵诗画——全国中国画作品展 （中国美术家协会主办）</a></p>
-
-<p> <a href="https://www.caanet.org.cn/newsdetail.mx?id=3039">《并非遥远的记忆》 入选 纪念何香凝先生诞辰140周年暨首届“香凝如故”全国美术作品展（中国画、油画） （民革中央委员会 中国美术家协会 联合主办）</a></p>
-                      
-<p> <a href="https://www.caanet.org.cn/newsdetail.mx?id=2443">《相约蔚蓝》 入选 2017第六届中国·观澜国际版画双年展 （中国美术家协会主办）</a></p>
-<p> <a href="https://www.ccpf-cn.com/a/xinwenzhongxin/zhongdaxinwen/2019/1016/1535_3.html">《沧浪烟雨卧暖阳 》 入选我爱你，祖国——庆祝新中国成立70周年第二届新文艺群体书画家优秀作品展（中国文联主办） </a></p>               
- 
-                    </div>
-                    
-                     <div class="about-us-content mb-80">
-                        <h3 class="wow fadeInUp" data-wow-delay="100ms">网站链接</h3>
-                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">
-                        
-                         <p> <a href="https://kknews.cc/culture/abxpbyg.html" style="color:#ff0000" >书法润格</a> </p>
-                         <p> <a href="https://auction.secoo.com/item/56859.html" style="color:#ff0000" >书法作品网站</a> </p>
-                         <p> <a href="http://wangdanyigh.zxart.cn/" style="color:#ff0000" >其他</a> </p>
-                    </div>
-                    
-                    
-                    
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <img src="img/bg-img/18.jpg" alt="">
-                        <div class="video-icon">
-                            <a href="https://www.youtube.com/watch?v=sSakBz_eYzQ" class="video-play-btn"><i class="arrow_triangle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Links -->
+          <div class="fade-up">
+            <p class="section-subtitle" data-en="Links" data-cn="相关链接">Links</p>
+            <div class="bio-text">
+              <p><a href="https://kknews.cc/culture/abxpbyg.html" target="_blank" rel="noopener"
+                    data-en="Calligraphy Reviews" data-cn="书法评论">Calligraphy Reviews</a></p>
+              <p style="margin-top:.5rem"><a href="https://auction.secoo.com/item/56859.html" target="_blank" rel="noopener"
+                    data-en="Works of Calligraphy" data-cn="书法作品">Works of Calligraphy</a></p>
+              <p style="margin-top:.5rem"><a href="http://wangdanyigh.zxart.cn/" target="_blank" rel="noopener"
+                    data-en="Art Archive" data-cn="艺术档案">Art Archive</a></p>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    <!-- About Us Area End -->
+  </section>
 
-   
-    <!-- Footer Area Start -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-content d-flex align-items-center justify-content-between">
-                        <!-- Copywrite Text -->
-                        <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <hr class="divider">
+
+  <!-- ── Awards & Exhibitions ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-subtitle fade-up" data-en="Recognition" data-cn="荣誉">Recognition</p>
+      <h2 class="section-title fade-up" data-en="Awards &amp; Exhibitions" data-cn="获奖与展览">Awards &amp; Exhibitions</h2>
+
+      <div class="timeline" style="margin-top:2.5rem; max-width:780px;">
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2019</p>
+          <p class="timeline-item__title"
+             data-en="Moonlight" data-cn="《月光》">Moonlight</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=7279" target="_blank" rel="noopener"
+               data-en="Selected in the 13th National Art Exhibition — Co-sponsored by the Ministry of Culture and Tourism, China Federation of Literary and Art Circles, and China Artists Association"
+               data-cn="入选第十三届全国美术作品展——文化和旅游部、中国文学艺术界联合会、中国美术家协会联合主办">
+              Selected in the 13th National Art Exhibition — Co-sponsored by the Ministry of Culture and Tourism, China Federation of Literary and Art Circles, and China Artists Association
+            </a>
+          </p>
         </div>
-    </footer>
-    <!-- Footer Area End -->
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/alime.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2019</p>
+          <p class="timeline-item__title"
+             data-en="In Misty Rain and Warm Sun" data-cn="《烟雨暖阳》">In Misty Rain and Warm Sun</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.ccpf-cn.com/a/xinwenzhongxin/zhongdaxinwen/2019/1016/1535_3.html" target="_blank" rel="noopener"
+               data-en="Selected in Love You Motherland — to Celebrate the 70th Anniversary of the Founding of China (Hosted by China Federation of Literary and Art Circles)"
+               data-cn="入选「爱你中国——庆祝新中国成立70周年」全国美术作品展（中国文联主办）">
+              Selected in Love You Motherland — to Celebrate the 70th Anniversary of the Founding of China (Hosted by China Federation of Literary and Art Circles)
+            </a>
+          </p>
+        </div>
 
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2019</p>
+          <p class="timeline-item__title"
+             data-en="Recite Poems in the Moonlight" data-cn="《月下诵诗》">Recite Poems in the Moonlight</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=7011" target="_blank" rel="noopener"
+               data-en="Selected in Spirit of Xu Beihong — The 3rd Chinese Painting Exhibition (Sponsored by China Artists Association)"
+               data-cn="入选「徐悲鸿精神」·第三届中国画展（中国美术家协会主办）">
+              Selected in Spirit of Xu Beihong — The 3rd Chinese Painting Exhibition (Sponsored by China Artists Association)
+            </a>
+          </p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2018</p>
+          <p class="timeline-item__title"
+             data-en="For Forgotten Memories" data-cn="《为了忘却的记忆》">For Forgotten Memories</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=7393" target="_blank" rel="noopener"
+               data-en="Selected in the 23rd National Printmaking Exhibition (Sponsored by China Artists Association)"
+               data-cn="入选第二十三届全国版画作品展（中国美术家协会主办）">
+              Selected in the 23rd National Printmaking Exhibition (Sponsored by China Artists Association)
+            </a>
+          </p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2018</p>
+          <p class="timeline-item__title"
+             data-en="Daughter of the Sea" data-cn="《海的女儿》">Daughter of the Sea</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=6892" target="_blank" rel="noopener"
+               data-en="Selected in the 2nd China Illustration Art Exhibition (Sponsored by China Artists Association)"
+               data-cn="入选第二届中国插图艺术展（中国美术家协会主办）">
+              Selected in the 2nd China Illustration Art Exhibition (Sponsored by China Artists Association)
+            </a>
+          </p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2018</p>
+          <p class="timeline-item__title"
+             data-en="Not Memory Far Away" data-cn="《不是记忆的远方》">Not Memory Far Away</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=3039" target="_blank" rel="noopener"
+               data-en="Selected to Commemorate the 140th Anniversary of the Birth of He Xiangning — 1st Adjacent National Art Exhibition (Joint-sponsored by China Artists Association and the Central Committee of the National Revolutionary Committee)"
+               data-cn="入选纪念何香凝诞辰140周年暨第一届毗邻地区全国美术作品展（中国美术家协会、民革中央联合主办）">
+              Selected to Commemorate the 140th Anniversary of the Birth of He Xiangning — 1st Adjacent National Art Exhibition
+            </a>
+          </p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2018</p>
+          <p class="timeline-item__title"
+             data-en="Sheng'an Poetry Talk" data-cn="《晟庵诗话》">Sheng'an Poetry Talk</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=3135" target="_blank" rel="noopener"
+               data-en="Selected in Sheng'an Poems and Paintings — National Chinese Painting Exhibition (Sponsored by China Artists Association)"
+               data-cn="入选晟庵诗意全国中国画作品展（中国美术家协会主办）">
+              Selected in Sheng'an Poems and Paintings — National Chinese Painting Exhibition (Sponsored by China Artists Association)
+            </a>
+          </p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <p class="timeline-item__year">2017</p>
+          <p class="timeline-item__title"
+             data-en="In Azure" data-cn="《在青花里》">In Azure</p>
+          <p class="timeline-item__desc">
+            <a href="https://www.caanet.org.cn/newsdetail.mx?id=2443" target="_blank" rel="noopener"
+               data-en="Selected in the 6th China Guanlan International Printmaking Biennale (Sponsored by China Artists Association)"
+               data-cn="入选第六届中国观澜国际版画双年展（中国美术家协会主办）">
+              Selected in the 6th China Guanlan International Printmaking Biennale (Sponsored by China Artists Association)
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Press ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-subtitle fade-up" data-en="Media" data-cn="媒体报道">Media</p>
+      <h2 class="section-title fade-up" data-en="Press" data-cn="新闻报道">Press</h2>
+
+      <div class="press-grid" style="margin-top:2rem;">
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/1st.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/1st.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/2nd.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/2nd.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/3rd.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/3rd.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/4th.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/4th.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/moon.jpg"
+             data-title="Moonlight — Exhibition" data-medium="Press" data-year="2019">
+          <img src="img/bg-img/press/moon.jpg" alt="Moonlight at exhibition">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Moonlight" data-cn="月光">Moonlight</p>
+            <p class="artwork-card__meta" data-en="13th National Art Exhibition" data-cn="第十三届全国美展">13th National Art Exhibition</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/mem.jpg"
+             data-title="For Forgotten Memories — Exhibition" data-medium="Press" data-year="2018">
+          <img src="img/bg-img/press/mem.jpg" alt="For Forgotten Memories at exhibition">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="For Forgotten Memories" data-cn="为了忘却的记忆">For Forgotten Memories</p>
+            <p class="artwork-card__meta" data-en="23rd National Printmaking Exhibition" data-cn="第二十三届全国版画展">23rd National Printmaking Exhibition</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/3.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/3.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/4.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/4.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/8.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/8.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/11.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/11.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+        <div class="artwork-card fade-up"
+             data-src="img/bg-img/press/12.jpg"
+             data-title="Press Coverage" data-medium="Press" data-year="">
+          <img src="img/bg-img/press/12.jpg" alt="Press coverage">
+          <div class="artwork-card__info">
+            <p class="artwork-card__title" data-en="Press Coverage" data-cn="新闻报道">Press Coverage</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Academic Papers ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-subtitle fade-up" data-en="Scholarship" data-cn="学术研究">Scholarship</p>
+      <h2 class="section-title fade-up" data-en="Academic Papers" data-cn="学术论文">Academic Papers</h2>
+
+      <div class="paper-list fade-up" style="max-width:800px; margin-top:2rem;">
+
+        <div class="paper-item">
+          <span class="paper-item__year">2000</span>
+          <div class="paper-item__text">
+            <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbname=CJFD2000&filename=SFYZ200008" target="_blank" rel="noopener"
+               data-en="Review the Standard of Calligraphy from Huaiguan Zhang's Shu Duan"
+               data-cn="从张怀瓘《书断》看书法的品评标准">
+              Review the Standard of Calligraphy from Huaiguan Zhang's <em>Shu Duan</em>
+            </a>
+            <span class="paper-item__journal"
+                  data-en="Calligraphy (书法), 2000-08" data-cn="《书法》2000年第8期">Calligraphy (书法), 2000-08</span>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <span class="paper-item__year">1998</span>
+          <div class="paper-item__text">
+            <span data-en="Dive Deep into Huaiguan Zhang's Shu Duan"
+                  data-cn="深析张怀瓘《书断》">
+              Dive Deep into Huaiguan Zhang's <em>Shu Duan</em>
+            </span>
+            <span class="paper-item__journal"
+                  data-en="Journal of Calligraphy (书法报), 1998-04" data-cn="《书法报》1998年第4期">Journal of Calligraphy (书法报), 1998-04</span>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <span class="paper-item__year">&nbsp;</span>
+          <div class="paper-item__text">
+            <span data-en="Beauty of Calligraphy" data-cn="书法之美">Beauty of Calligraphy</span>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <span class="paper-item__year">&nbsp;</span>
+          <div class="paper-item__text">
+            <span data-en="Write the Unwritten" data-cn="写无字之书">Write the Unwritten</span>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <span class="paper-item__year">&nbsp;</span>
+          <div class="paper-item__text">
+            <span data-en="The Formation and Evolution of Clerical Script"
+                  data-cn="隶书的形成与演变">The Formation and Evolution of Clerical Script</span>
+          </div>
+        </div>
+
+        <div class="paper-item">
+          <span class="paper-item__year">&nbsp;</span>
+          <div class="paper-item__text">
+            <span data-en="Research on Cursive Script" data-cn="草书研究">Research on Cursive Script</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Video ── -->
+  <section class="section">
+    <div class="container" style="max-width:840px;">
+      <p class="section-subtitle fade-up" data-en="Video" data-cn="视频">Video</p>
+      <h2 class="section-title fade-up" data-en="Artist at Work" data-cn="创作过程">Artist at Work</h2>
+      <div class="video-wrap fade-up" style="margin-top:2rem;">
+        <iframe src="https://www.youtube.com/embed/sSakBz_eYzQ"
+                title="Danyi Wang — Artist at Work"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name" data-en="Danyi Wang" data-cn="王丹一">Danyi Wang</span>
+        <span class="footer-copy"
+              data-en="© 2025 Danyi Wang. All rights reserved."
+              data-cn="© 2025 王丹一。版权所有。">© 2025 Danyi Wang. All rights reserved.</span>
+        <span class="footer-contact">
+          <a href="mailto:serverqaq@gmail.com">serverqaq@gmail.com</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Lightbox ── -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox__inner">
+      <img class="lightbox__img" src="" alt="">
+      <div class="lightbox__caption">
+        <p class="lightbox__title"></p>
+        <p class="lightbox__meta"></p>
+      </div>
+    </div>
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox__nav lightbox__next" aria-label="Next">&#8594;</button>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var mobileLang = document.getElementById('lang-toggle-mobile');
+      var mainLang   = document.getElementById('lang-toggle');
+      if (mobileLang && mainLang) {
+        mobileLang.addEventListener('click', function() {
+          mainLang.click();
+          mobileLang.textContent = mainLang.textContent;
+        });
+      }
+    });
+  </script>
 </body>
-
 </html>
