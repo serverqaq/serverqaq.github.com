@@ -699,6 +699,59 @@ h3 { font-size: 1.2rem; }
   transform: translateY(0);
 }
 
+/* ── Prose (Statement page) ─────────────────────────────────── */
+.prose {
+  max-width: 740px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text);
+}
+.prose p { margin: 0 0 1.4em; }
+.prose-intro {
+  border-left: 3px solid var(--accent);
+  padding: .8rem 1.5rem;
+  margin-bottom: 3rem;
+  background: rgba(139,115,85,.05);
+  border-radius: 0 4px 4px 0;
+}
+.prose-intro p { font-size: 1.1rem; font-style: italic; color: var(--muted); margin: 0; }
+.prose-en-note { font-size: .85rem; color: var(--muted); margin-bottom: 2rem; }
+.prose-chapter { margin-top: 3.5rem; }
+.prose-chapter__heading {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.4rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── CV Table ───────────────────────────────────────────────── */
+.cv-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1.5rem;
+  font-size: .95rem;
+}
+.cv-table th,
+.cv-table td {
+  padding: .65rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.cv-table th {
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--muted);
+  width: 9rem;
+  white-space: nowrap;
+}
+.cv-table td { color: var(--text); }
+
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
