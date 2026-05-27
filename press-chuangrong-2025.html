@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danyi Wang — Beauty Without Borders: Building a Community with a Shared Future for Mankind. Published by Beijing Chuangrong Times Arts Center, 2025.">
+  <title>Beauty Without Borders — Ewen Wang</title>
+  <link rel="icon" href="img/bg-img/6.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XD2RVWDXLJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XD2RVWDXLJ');
+  </script>
+  <style>
+    /* ── Article page scoped styles ── */
+    .art-article {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .art-article .art-back {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .85rem;
+      color: var(--accent);
+      text-decoration: none;
+      margin: 2rem 0 1.5rem;
+    }
+    .art-article .art-back:hover { text-decoration: underline; }
+
+    /* Cover image: full-width portrait */
+    .art-cover {
+      width: 100%;
+      display: block;
+      margin-bottom: 0;
+    }
+
+    /* Editorial credits block */
+    .art-credits {
+      background: #f5f2ed;
+      border-left: 3px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+      font-size: .82rem;
+      line-height: 2;
+      color: var(--text);
+    }
+    .art-credits-row {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+    .art-credits-label {
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 6rem;
+      font-weight: 500;
+    }
+    .art-credits-names { flex: 1; }
+
+    /* Decorative divider strip */
+    .art-divider {
+      width: 100%;
+      display: block;
+      margin: 1.5rem 0;
+    }
+
+    /* Section heading style (matches WeChat article) */
+    .art-section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2rem 0 .75rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .art-section-subtitle {
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Body paragraphs with Chinese-style indent */
+    .art-article p {
+      text-indent: 2em;
+      margin: 0 0 .75rem;
+    }
+    /* Exception: no indent on labels / table-context text */
+    .art-article p.no-indent { text-indent: 0; }
+
+    /* Artwork image: full-width */
+    .art-img {
+      width: 100%;
+      display: block;
+      margin: .5rem 0;
+    }
+
+    /* Exhibition list */
+    .art-exhibition-list {
+      list-style: none;
+      padding: 0;
+      margin: .5rem 0 1.25rem;
+    }
+    .art-exhibition-list li {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: .25rem 1rem;
+      padding: .55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    .art-exhibition-list li:last-child { border-bottom: none; }
+    .art-exhibition-year {
+      font-weight: 600;
+      color: var(--accent);
+      padding-top: .05rem;
+    }
+    .art-exhibition-work { font-weight: 600; }
+    .art-exhibition-desc { color: var(--muted); font-size: .85rem; }
+
+    /* Chapter headings (the 8 thematic sections) */
+    .art-chapter {
+      margin-top: 2.5rem;
+    }
+    .art-chapter-num {
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .25rem;
+    }
+    .art-chapter-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0 0 1rem;
+      line-height: 1.4;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html"
+         data-en="Ewen Wang" data-cn="王志 (Ewen Wang)">Ewen Wang</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" data-en="Home" data-cn="主页">Home</a>
+        <a href="works.html" data-en="Works" data-cn="作品">Works</a>
+        <a href="about.html" data-en="About" data-cn="简介">About</a>
+        <a href="statement.html" data-en="Statement" data-cn="自述">Statement</a>
+        <a href="cv.html" data-en="CV" data-cn="简历">CV</a>
+        <a href="contact.html" data-en="Contact" data-cn="联系">Contact</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+      </nav>
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-drawer" aria-label="Mobile navigation">
+    <a href="index.html" data-en="Home" data-cn="主页">Home</a>
+    <a href="works.html" data-en="Works" data-cn="作品">Works</a>
+    <a href="about.html" data-en="About" data-cn="简介">About</a>
+    <a href="statement.html" data-en="Statement" data-cn="自述">Statement</a>
+    <a href="cv.html" data-en="CV" data-cn="简历">CV</a>
+    <a href="contact.html" data-en="Contact" data-cn="联系">Contact</a>
+    <button id="lang-toggle-mobile" class="lang-toggle" aria-label="Switch language">中文</button>
+  </nav>
+
+  <!-- ── Page Header ── -->
+  <div class="page-header">
+    <div class="container">
+      <p class="section-subtitle" data-en="Press Coverage · 2025" data-cn="媒体报道 · 2025">Press Coverage · 2025</p>
+      <h1 data-en="Beauty Without Borders" data-cn="美是跨越国界的拥抱">Beauty Without Borders</h1>
+    </div>
+  </div>
+
+  <!-- ── Article ── -->
+  <section class="section" style="padding-top:1rem;">
+    <div class="art-article">
+
+      <a href="about.html#press" class="art-back">
+        &#8592; <span data-en="Back to About" data-cn="返回简介页">Back to About</span>
+      </a>
+
+      <!-- 1. COVER IMAGE -->
+      <img class="art-cover"
+           src="img/bg-img/press/chuangrong/cover.png"
+           alt="王丹一 — 美是跨越国界的拥抱 构建人类命运共同体">
+
+      <!-- 2. EDITORIAL CREDITS -->
+      <div class="art-credits">
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Curated by" data-cn="策  展">Curated by</span>
+          <span class="art-credits-names">北京创荣时代艺术中心</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Content planning" data-cn="内容策划">Content planning</span>
+          <span class="art-credits-names">王 宁 &emsp; 郑明远</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Contributing writers" data-cn="特约撰稿">Contributing writers</span>
+          <span class="art-credits-names">创荣时代美学文献研究中心</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Copy editors" data-cn="特约审校">Copy editors</span>
+          <span class="art-credits-names">杨应念 &ensp; 叶题博 &ensp; 章&ensp;藩 &ensp; 马邱恒</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Editors" data-cn="特约编辑">Editors</span>
+          <span class="art-credits-names">张伶韵 &ensp; 宋沐卉 &ensp; 霍涵翎 &ensp; 柳迪苏</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Marketing editors" data-cn="营销编辑">Marketing editors</span>
+          <span class="art-credits-names">徐梦洁 &ensp; 郑鑫蕾 &ensp; 文&ensp;薇 &ensp; 顾&ensp;菲</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Design" data-cn="图文设计">Design</span>
+          <span class="art-credits-names">刘博文 &ensp; 许半青</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Cover design" data-cn="封面设计">Cover design</span>
+          <span class="art-credits-names">杨&ensp;诗 &ensp; 听&ensp;然</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Special support" data-cn="特别支持">Special support</span>
+          <span class="art-credits-names">张君昊 &ensp; 苏&ensp;书 &ensp; 冯&ensp;狄 &ensp; 季风眠 &ensp; 周一白</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Chief editors" data-cn="责任编辑">Chief editors</span>
+          <span class="art-credits-names">李乐松 &ensp; 方可为 &ensp; 唐&ensp;年 &ensp; 沈千寻</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Art history" data-cn="史论研究">Art history</span>
+          <span class="art-credits-names">朱舜水 &ensp; 张孟劬 &ensp; 臧在东</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Aesthetic criticism" data-cn="美学批评">Aesthetic criticism</span>
+          <span class="art-credits-names">刘宗山 &ensp; 张蒿庵 &ensp; 方&ensp;衡</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Art appreciation" data-cn="作品品鉴">Art appreciation</span>
+          <span class="art-credits-names">顾枕山 &ensp; 谢半杳 &ensp; 梁&ensp;成</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Cultural studies" data-cn="文脉考辨">Cultural studies</span>
+          <span class="art-credits-names">王观非 &ensp; 梁漱石 &ensp; 崔让予</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Contemporary observation" data-cn="当代观察">Contemporary observation</span>
+          <span class="art-credits-names">陈澧甫 &ensp; 段懋堂 &ensp; 梁任公</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Cultural interpretation" data-cn="文化阐释">Cultural interpretation</span>
+          <span class="art-credits-names">许东阳 &ensp; 周闻遒 &ensp; 庄&ensp;敬</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Formal language" data-cn="形式语言研究">Formal language</span>
+          <span class="art-credits-names">罗鸿云 &ensp; 庄复敬 &ensp; 郑无咎</span>
+        </div>
+        <div class="art-credits-row">
+          <span class="art-credits-label" data-en="Cross-media studies" data-cn="跨媒介研究">Cross-media studies</span>
+          <span class="art-credits-names">许观复 &ensp; 林怀远 &ensp; 章实斋</span>
+        </div>
+      </div>
+
+      <!-- 3. DIVIDER + PREFACE -->
+      <img class="art-divider" src="img/bg-img/press/chuangrong/divider-1.png" alt="">
+
+      <p class="art-section-subtitle no-indent" data-en="Preface" data-cn="前 言">Preface</p>
+
+      <p data-en="Contemporary China is advancing Chinese-style modernization — not merely a material leap forward, but a profound reshaping of spiritual civilization and the laying of foundations for a modern Chinese identity. In this context, art bears the mission of bridging civilizational dialogue, forging human consensus, and building a community with a shared future for mankind. General Secretary Xi Jinping has called for outstanding traditional Chinese culture to undergo 'creative transformation and innovative development' — charting the course for artistic creation: art must be rooted in tradition and resonate with the world."
+         data-cn="当代中国正推进中国式现代化，这不仅是物质跃升，更是精神文明重塑与中华民族现代文明筑基。在此背景下，艺术肩负联通文明对话、凝聚人类共识、构建人类命运共同体的使命。习近平总书记指出，要推动中华优秀传统文化"创造性转化、创新性发展"，为艺术创作指明方向：艺术要根植传统，与世界共鸣。">
+        当代中国正推进中国式现代化，这不仅是物质跃升，更是精神文明重塑与中华民族现代文明筑基。在此背景下，艺术肩负联通文明对话、凝聚人类共识、构建人类命运共同体的使命。习近平总书记指出，要推动中华优秀传统文化"创造性转化、创新性发展"，为艺术创作指明方向：艺术要根植传统，与世界共鸣。
+      </p>
+      <p data-en="Contemporary artists consciously fulfill this mission, pursuing a realm of great beauty — their works carrying a deep concern for life. The works presented in China's Beauty carry forward this spirit, forming a footnote to 'the community of human destiny as seen through the artist's brush.' Their artistic value lies in continuing and elevating the spiritual lineage of Chinese art's ideal of 'beauty shared in harmony.' Artists take 'community' as their guiding theme, set aside division, and build a spiritual landscape; their multifaceted, expansive conception of 'beauty' embodies the mutual appreciation of civilizations and the resonance of shared values."
+         data-cn="当代艺术家自觉践行使命，追求大美之境，作品蕴含生命关怀。《中国之美》呈现的作品延续此精神，构成"艺术家笔下的人类命运共同体"的注脚。其艺术价值在于续写升华中国艺术"美美与共"的精神谱系，艺术家以"共同体"为题眼，摒弃隔阂，构建精神图景，多元开阔的"美"体现文明互鉴与价值共鸣。">
+        当代艺术家自觉践行使命，追求大美之境，作品蕴含生命关怀。《中国之美》呈现的作品延续此精神，构成"艺术家笔下的人类命运共同体"的注脚。其艺术价值在于续写升华中国艺术"美美与共"的精神谱系，艺术家以"共同体"为题眼，摒弃隔阂，构建精神图景，多元开阔的"美"体现文明互鉴与价值共鸣。
+      </p>
+      <p data-en="These works transcend the scholar's studio to become 'declarations of the era' that connect with the world — constructing an emotional structure universally capable of empathy, sparking a 'common emotional denominator,' and expressing a longing for 'harmony in diversity.' In the grand context of the age, this creative work is a vivid example of the 'two creative transformations' of traditional culture and mutual learning between civilizations. Studying and promoting China's Beauty as a text of the era is a public cultural practice of cultivating the spirit through beauty and forging the soul through culture — we need more such artistic models to jointly build a new form of civilization."
+         data-cn="这些作品超越书斋雅趣，成为联通世界的"时代宣言"，核心是构建了可普遍感知共情的情感结构，激发"情感公约数"，表达对"和而不同"等的向往。置于时代大背景下，这些创作是传统文化"两创"与文明交流互鉴的生动案例。将《中国之美》作为时代读本研读推广，是以美培元、以文铸魂的公共文化实践，我们需更多艺术典范，共筑文明新形态。">
+        这些作品超越书斋雅趣，成为联通世界的"时代宣言"，核心是构建了可普遍感知共情的情感结构，激发"情感公约数"，表达对"和而不同"等的向往。置于时代大背景下，这些创作是传统文化"两创"与文明交流互鉴的生动案例。将《中国之美》作为时代读本研读推广，是以美培元、以文铸魂的公共文化实践，我们需更多艺术典范，共筑文明新形态。
+      </p>
+
+      <!-- 4. DIVIDER + ARTWORK IMAGE -->
+      <img class="art-divider" src="img/bg-img/press/chuangrong/divider-2.png" alt="">
+      <img class="art-img" src="img/bg-img/press/chuangrong/artwork-1.png" alt="王丹一作品">
+
+      <!-- 5. ARTIST PROFILE -->
+      <div style="margin-top:1.75rem;">
+        <p class="art-section-subtitle no-indent" data-en="Artist Profile" data-cn="艺术家简介">Artist Profile</p>
+        <p data-en="Wang Zhi (王志), known by his artist names Danyi Wang (王丹一) and Ye Wang (王也), was born in 1957 in Bozhou, Anhui Province, with ancestral roots in Taihe, Anhui. He holds a master's degree in Classical Documentation from the Institute of Ancient Books, Jilin University, and has long resided in Beijing. He currently serves as Dean of Jingzhong Academy of Painting and Calligraphy, and is a member of the China Artists Association, the China Mural Society, and a first-class fine artist. His practice encompasses art theory, Chinese painting, mineral pigment painting (iwasai), woodblock printmaking, and illustration — with particular distinction in oil painting, where his influence is widely felt."
+           data-cn="王志，艺名王丹一、王也，1957年出生。安徽亳州人，祖籍安徽太和。吉林大学古籍研究所文献专业硕士。他长期定居于北京。现任京中书画院院长、中国美术家协会会员、中国壁画学会会员、一级美术师。他涉猎的领域有：艺术理论、中国画、岩彩画、木刻版画、插图等，特别是在油画创作方面独树一帜，在社会上有极其广泛的影响。">
+          王志，艺名王丹一、王也，1957年出生。安徽亳州人，祖籍安徽太和。吉林大学古籍研究所文献专业硕士。他长期定居于北京。现任京中书画院院长、中国美术家协会会员、中国壁画学会会员、一级美术师。他涉猎的领域有：艺术理论、中国画、岩彩画、木刻版画、插图等，特别是在油画创作方面独树一帜，在社会上有极其广泛的影响。
+        </p>
+      </div>
+
+      <!-- 6. EXHIBITIONS -->
+      <p class="art-section-subtitle no-indent" style="margin-top:1.5rem;"
+         data-en="Selected Exhibitions: From 'Spirit of Xu Beihong' to 'Creation Myth'"
+         data-cn="重要参展一览：从"悲鸿精神"到"创世神话"">
+        Selected Exhibitions
+      </p>
+      <ul class="art-exhibition-list">
+        <li>
+          <span class="art-exhibition-year">2021</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Yu Slays Fangfeng 《禹诛防风氏》" data-cn="《禹诛防风氏》">《禹诛防风氏》</div>
+            <div class="art-exhibition-desc" data-en="Creation of Heaven and Earth — Chinese Myth in Literature and Art" data-cn="《开天辟地——中华创世神话文艺创作工程》">《开天辟地——中华创世神话文艺创作工程》</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2019</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Daughter of the Sea 《海的女儿》" data-cn="《海的女儿》">《海的女儿》</div>
+            <div class="art-exhibition-desc" data-en="2nd China Illustration Art Exhibition (China Artists Association)" data-cn="入选第二届中国插图艺术展（中国美术家协会主办）">入选第二届中国插图艺术展（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2019</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Recite Poems in the Moonlight 《月光吟》" data-cn="《月光吟》">《月光吟》</div>
+            <div class="art-exhibition-desc" data-en="Spirit of Xu Beihong — 3rd National Chinese Painting Exhibition (China Artists Association)" data-cn="入选悲鸿精神——第三届全国中国画作品展（中国美术家协会主办）">入选悲鸿精神——第三届全国中国画作品展（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2019</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Moonlight Sonata 《月光曲》" data-cn="《月光曲》">《月光曲》</div>
+            <div class="art-exhibition-desc" data-en="13th National Art Exhibition — Mural Section" data-cn="入选第十三届全国美术作品展览壁画展区（中国美术家协会主办）">入选第十三届全国美术作品展览壁画展区（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2019</span>
+          <div>
+            <div class="art-exhibition-work" data-en="For Forgotten Memories 《为了忘却的记忆》" data-cn="《为了忘却的记忆》">《为了忘却的记忆》</div>
+            <div class="art-exhibition-desc" data-en="23rd National Printmaking Exhibition (China Artists Association)" data-cn="入选第二十三届全国版画作品展（中国美术家协会主办）">入选第二十三届全国版画作品展（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2019</span>
+          <div>
+            <div class="art-exhibition-work" data-en="In Misty Rain and Warm Sun 《沧浪烟雨卧暖阳》" data-cn="《沧浪烟雨卧暖阳》">《沧浪烟雨卧暖阳》</div>
+            <div class="art-exhibition-desc" data-en="Love You, Motherland — 70th Anniversary Exhibition (China Federation of Literary and Art Circles)" data-cn="入选我爱你，祖国——庆祝新中国成立70周年第二届新文艺群体书画家优秀作品展（中国文联主办）">入选我爱你，祖国——庆祝新中国成立70周年展（中国文联主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2018</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Sheng'an Poetry Talk 《升庵诗话》" data-cn="《升庵诗话》">《升庵诗话》</div>
+            <div class="art-exhibition-desc" data-en="Sheng'an Poems and Paintings — National Chinese Painting Exhibition (China Artists Association)" data-cn="入选升庵诗画——全国中国画作品展（中国美术家协会主办）">入选升庵诗画——全国中国画作品展（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2018</span>
+          <div>
+            <div class="art-exhibition-work" data-en="Not Memory Far Away 《并非遥远的记忆》" data-cn="《并非遥远的记忆》">《并非遥远的记忆》</div>
+            <div class="art-exhibition-desc" data-en="Commemorating He Xiangning's 140th Birthday — 1st National Exhibition (China Artists Association)" data-cn="入选纪念何香凝先生诞辰140周年暨首届"香凝如故"全国美术作品展（中国美术家协会主办）">入选纪念何香凝先生诞辰140周年暨首届"香凝如故"全国美术作品展（中国美术家协会主办）</div>
+          </div>
+        </li>
+        <li>
+          <span class="art-exhibition-year">2017</span>
+          <div>
+            <div class="art-exhibition-work" data-en="In Azure 《相约蔚蓝》" data-cn="《相约蔚蓝》">《相约蔚蓝》</div>
+            <div class="art-exhibition-desc" data-en="6th China Guanlan International Printmaking Biennale (China Artists Association)" data-cn="入选第六届中国·观澜国际版画双年展（中国美术家协会主办）">入选第六届中国·观澜国际版画双年展（中国美术家协会主办）</div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 7. DIVIDER + SECOND ARTWORK -->
+      <img class="art-divider" src="img/bg-img/press/chuangrong/divider-3.png" alt="">
+      <img class="art-img" src="img/bg-img/press/chuangrong/artwork-2.png" alt="王丹一作品">
+
+      <!-- 8. THE EIGHT THEMATIC SECTIONS -->
+
+      <!-- I -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="I" data-cn="一">I</p>
+        <h2 class="art-chapter-heading"
+            data-en="Civilization Crosses Oceans, Art Reaches the Heart"
+            data-cn="文明跨越山海，艺术直抵人心">
+          文明跨越山海，艺术直抵人心
+        </h2>
+        <p data-en="Standing in the roots of Eastern culture while looking toward humanity's shared future, Danyi Wang builds bridges of civilizational dialogue through a multifaceted artistic language — enabling viewers from different cultural backgrounds to find shared ground and see a shared world. As Dean of Jingzhong Academy and a first-class artist, he transcends any single medium: oil painting, Chinese ink painting, printmaking, and illustration flow together in an open vision that breaks down artistic barriers and practices the creative philosophy of mutual learning between civilizations."
+           data-cn="文明跨越山海，艺术直抵人心。王丹一立足东方文化根脉，放眼人类共同命运，用多元艺术语言搭建文明对话的桥梁，让不同文化背景的观者读懂共情、看见共生。作为京中书画院院长、一级美术师，他不局限于单一画种，油画、中国画、版画、插图融会贯通，以开放视野打破艺术壁垒，践行文明互鉴的创作理念。">
+          文明跨越山海，艺术直抵人心。王丹一立足东方文化根脉，放眼人类共同命运，用多元艺术语言搭建文明对话的桥梁，让不同文化背景的观者读懂共情、看见共生。作为京中书画院院长、一级美术师，他不局限于单一画种，油画、中国画、版画、插图融会贯通，以开放视野打破艺术壁垒，践行文明互鉴的创作理念。
+        </p>
+        <p data-en="Yu Slays Fangfeng, selected for the Chinese Mythology Creation Project, elevates the collective memory of ancient forebears — their reverence for nature, moral virtue, and harmony — into a universal spiritual aspiration, reflecting humanity's shared pursuit of peace, justice, and ecological harmony. Danyi Wang persistently holds to the fusion of Chinese and Western traditions: he combines the luminous texture and chromatic depth of Western oil painting with the ethereal spirit and expressive freedom of Eastern art. Daughter of the Sea uses delicate brushwork to portray the warmth of life — softening cultural difference and strengthening human resonance — conveying a tender regard for the dignity and warmth of individual lives."
+           data-cn="《禹诛防风氏》入选中华创世神话工程，将上古先民敬天尚德、和合共生的集体记忆，升华为人类共通的精神向往，折射对和平、正义、生态和谐的共同追求。深耕艺术表达，王丹一始终坚持中西融合、形神兼备。他将西方油画的光影质感、色彩层次，与东方艺术的空灵意境、写意精神相融，形成独树一帜的视觉语言。《海的女儿》以细腻笔触刻画生命温情，弱化文化差异、强化人性共鸣，传递对生命尊严与温暖情感的珍视，契合人类命运共同体的价值内核。">
+          《禹诛防风氏》入选中华创世神话工程，将上古先民敬天尚德、和合共生的集体记忆，升华为人类共通的精神向往，折射对和平、正义、生态和谐的共同追求。深耕艺术表达，王丹一始终坚持中西融合、形神兼备。他将西方油画的光影质感、色彩层次，与东方艺术的空灵意境、写意精神相融，形成独树一帜的视觉语言。《海的女儿》以细腻笔触刻画生命温情，弱化文化差异、强化人性共鸣，传递对生命尊严与温暖情感的珍视，契合人类命运共同体的价值内核。
+        </p>
+        <p data-en="With academic foundations in Classical Documentation from Jilin University, Wang mines the philosophical resources of 'great unity under heaven' embedded in Chinese civilization — weaving textual scholarship into his creative practice and providing solid grounding for civilizational dialogue. His works demonstrate that art truly rooted in national soil and oriented toward humanity's shared fate can cross borders, reach souls, and radiate enduring light in the meeting of civilizations."
+           data-cn="凭借吉林大学古籍研究所文献专业硕士的学术积淀，他深挖中华文脉中"天下大同"的思想资源，把文献考据、文化溯源融入创作，为文明对话提供扎实的学术支撑，让艺术成为凝聚共识、守望相助的精神纽带。作品多次入选国家级大展，王丹一以艺术实践推动中华文化走出去，让世界透过色彩与笔触理解中国、尊重差异、拥抱多元。">
+          凭借吉林大学古籍研究所文献专业硕士的学术积淀，他深挖中华文脉中"天下大同"的思想资源，把文献考据、文化溯源融入创作，为文明对话提供扎实的学术支撑，让艺术成为凝聚共识、守望相助的精神纽带。作品多次入选国家级大展，王丹一以艺术实践推动中华文化走出去，让世界透过色彩与笔触理解中国、尊重差异、拥抱多元。
+        </p>
+      </div>
+
+      <!-- II -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="II" data-cn="二">II</p>
+        <h2 class="art-chapter-heading"
+            data-en="Art Education Nurtures the Soul"
+            data-cn="美育滋养心灵，艺术温润时代">
+          美育滋养心灵，艺术温润时代
+        </h2>
+        <p data-en="Danyi Wang has always upheld the spirit of aesthetic education — creating works that combine aesthetic ambition with humanistic warmth. He plants his practice in lived experience, draws deeply from tradition, and responds to the era, bringing art out of the gallery and into daily life, infusing sustained vitality into public aesthetic education. As a member of the China Artists Association, he insists that art should serve society and nourish human hearts — his subjects close to the pulse of the times and the emotional life of the people, balancing artistic integrity with broad accessibility."
+           data-cn="美育滋养心灵，艺术温润时代。王丹一始终秉持美育初心，以兼具审美高度与人文温度的作品，扎根生活、浸润传统、回应时代，让艺术走出殿堂、走进大众，为社会美育注入持久活力。作为中国美术家协会会员，他坚持艺术服务社会、润泽人心，创作题材贴近时代脉搏、贴近大众情感，兼顾艺术专业性与大众接受度，成为社会美育的生动范本。">
+          美育滋养心灵，艺术温润时代。王丹一始终秉持美育初心，以兼具审美高度与人文温度的作品，扎根生活、浸润传统、回应时代，让艺术走出殿堂、走进大众，为社会美育注入持久活力。作为中国美术家协会会员，他坚持艺术服务社会、润泽人心，创作题材贴近时代脉搏、贴近大众情感，兼顾艺术专业性与大众接受度，成为社会美育的生动范本。
+        </p>
+        <p data-en="Recite Poems in the Moonlight and Moonlight Sonata conjure a tranquil realm through poetic light and shadow — blending the refined grace of traditional literati painting with modern aesthetic sensibility, their hazy moonlight communicating the subtle and ethereal quality of Eastern aesthetics, awakening a longing for a poetic life. For Forgotten Memories revisits history through the somber, weighty texture of printmaking — commemorating struggle and sacrifice, and fulfilling art's deep role of educating through history and forging the spirit through beauty."
+           data-cn="《月光吟》《月光曲》以诗意光影勾勒静谧意境，将传统文人画的清雅风骨与现代审美相融，以朦胧月色传递东方美学的含蓄空灵，唤起大众对诗意生活的向往；《为了忘却的记忆》以版画沉郁厚重的质感回望历史，铭记奋斗与牺牲，传递敬畏历史、珍爱和平的价值导向，发挥艺术以史育人、以美铸魂的深层作用。">
+          《月光吟》《月光曲》以诗意光影勾勒静谧意境，将传统文人画的清雅风骨与现代审美相融，以朦胧月色传递东方美学的含蓄空灵，唤起大众对诗意生活的向往；《为了忘却的记忆》以版画沉郁厚重的质感回望历史，铭记奋斗与牺牲，传递敬畏历史、珍爱和平的价值导向，发挥艺术以史育人、以美铸魂的深层作用。
+        </p>
+        <p data-en="Based at Jingzhong Academy, Danyi Wang actively promotes traditional art and modern creative thinking, engaging in public art education, charitable exhibitions, and grassroots activities — taking art into schools, communities, and villages. He consistently creates not for a niche audience and not in pursuit of fleeting novelty, but always conveys genuine feeling through a warm and sincere brushstroke — letting the public see life, feel beauty, and grow in taste through his works."
+           data-cn="立足京中书画院平台，王丹一积极推广传统艺术与现代创作理念，投身美育普及、公益展览、基层艺术活动，让艺术走出殿堂、惠及更多群众。他坚持创作不追小众、不逐浮华，始终以温润笔触传递真挚情感，让大众在作品中看见生活、感受美好、提升素养，彰显新时代艺术家的社会责任与美育担当。">
+          立足京中书画院平台，王丹一积极推广传统艺术与现代创作理念，投身美育普及、公益展览、基层艺术活动，让艺术走出殿堂、惠及更多群众。他坚持创作不追小众、不逐浮华，始终以温润笔触传递真挚情感，让大众在作品中看见生活、感受美好、提升素养，彰显新时代艺术家的社会责任与美育担当。
+        </p>
+      </div>
+
+      <!-- III -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="III" data-cn="三">III</p>
+        <h2 class="art-chapter-heading"
+            data-en="Cultural Lineage and Rooted Confidence"
+            data-cn="文脉绵延不绝，自信根植传统">
+          文脉绵延不绝，自信根植传统
+        </h2>
+        <p data-en="Wang Danyi is deeply rooted in the fertile soil of outstanding Chinese traditional culture — using steadfast preservation as his root and innovation as his wings. He carries forward a thousand years of cultural lineage and displays a calm cultural confidence, honoring the essence of civilization through inheritance and the spirit of the nation through creation. His upbringing — with origins in Taihe, Anhui, and long residence in Beijing — gives him both the weighty depth of Central Plains culture and the expansive horizons of the capital, and his creative practice remains consistently grounded in the soil of national culture, maintaining a distinctive Chinese character and national quality."
+           data-cn="文脉绵延不绝，自信根植传统。王丹一深植中华优秀传统文化沃土，以坚守为根、创新为翼，赓续千年文脉、彰显文化底气，在传承中弘扬文化精髓、在创作中彰显民族风骨，成为坚守中华文化立场、助力文化强国建设的艺术标杆。祖籍安徽太和、长期定居北京的成长经历，让他兼具中原文化的厚重底蕴与首都文化的开阔视野，创作始终扎根民族文化土壤，保持鲜明的中国气派与民族特质。">
+          文脉绵延不绝，自信根植传统。王丹一深植中华优秀传统文化沃土，以坚守为根、创新为翼，赓续千年文脉、彰显文化底气，在传承中弘扬文化精髓、在创作中彰显民族风骨，成为坚守中华文化立场、助力文化强国建设的艺术标杆。祖籍安徽太和、长期定居北京的成长经历，让他兼具中原文化的厚重底蕴与首都文化的开阔视野，创作始终扎根民族文化土壤，保持鲜明的中国气派与民族特质。
+        </p>
+        <p data-en="His commitment to tradition is expressed in a deep continuation of cultural lineage and spiritual inheritance. He delves into classical texts, mythology, and traditional aesthetics — drawing creative nourishment from the Chinese cultural vein, refusing to blindly follow Western trends, and always taking Chinese civilization as his creative origin. In Misty Rain and Warm Sun draws on the spirit of traditional landscape painting; Sheng'an Poetry Talk grounds itself in classical literary texts, transforming the traditional aesthetic of poetry-and-painting into modern artistic expression — making the cultural content of ancient texts visible and allowing the traditional vein to be reborn in contemporary art."
+           data-cn="王丹一对传统文化的坚守，体现在对文脉的深度赓续与精神传承上。他深耕古籍文献、神话传说、传统美学，从中华文脉中汲取创作养分，拒绝盲目跟风西方潮流，始终以中华文化为创作原点。《沧浪烟雨卧暖阳》取传统山水意境之神韵，借烟雨暖阳勾勒山水情怀，传递人与自然和谐共生的东方智慧，笔墨间流淌中式美学的含蓄悠远；《升庵诗话》立足古典文献典籍，将诗画相融的传统美学转化为现代艺术表达，让古籍文字的文化内涵可视化、具象化，让传统文脉在当代艺术创作中焕发新生。">
+          王丹一对传统文化的坚守，体现在对文脉的深度赓续与精神传承上。他深耕古籍文献、神话传说、传统美学，从中华文脉中汲取创作养分，拒绝盲目跟风西方潮流，始终以中华文化为创作原点。《沧浪烟雨卧暖阳》取传统山水意境之神韵，借烟雨暖阳勾勒山水情怀，传递人与自然和谐共生的东方智慧，笔墨间流淌中式美学的含蓄悠远；《升庵诗话》立足古典文献典籍，将诗画相融的传统美学转化为现代艺术表达，让古籍文字的文化内涵可视化、具象化，让传统文脉在当代艺术创作中焕发新生。
+        </p>
+      </div>
+
+      <!-- IV -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="IV" data-cn="四">IV</p>
+        <h2 class="art-chapter-heading"
+            data-en="The Chinese Aesthetic Spirit"
+            data-cn="中华美学精神">
+          中华美学精神
+        </h2>
+        <p data-en="Chinese aesthetics flows across a long history; its spiritual qi is passed down through generations. Wang Danyi plumbs the core of the Chinese aesthetic spirit — using oil painting as his primary vehicle, fusing the mood and realm of traditional aesthetics with modern artistic language — to interpret the Eastern aesthetic essence of 'primacy of mood,' 'union of form and spirit,' 'blending of scene and feeling,' and 'merging of self and world.' He allows Chinese aesthetics to shine with a distinctive radiance in the new era, manifesting a firm cultural confidence and profound cultural foundations."
+           data-cn="中华美学源远流长，精神气韵代代相传。王丹一深耕中华美学精神内核，以油画为核心载体，融合传统美学意境与现代艺术语言，诠释"意境为上、形神兼备""情景交融、物我合一"的东方审美精髓，让中华美学在新时代焕发独特光彩，彰显坚定的文化自信与深厚的文化底蕴。">
+          中华美学源远流长，精神气韵代代相传。王丹一深耕中华美学精神内核，以油画为核心载体，融合传统美学意境与现代艺术语言，诠释"意境为上、形神兼备""情景交融、物我合一"的东方审美精髓，让中华美学在新时代焕发独特光彩，彰显坚定的文化自信与深厚的文化底蕴。
+        </p>
+        <p data-en="His works are steeped in the distinctive flavor of Chinese aesthetics. In color expression, he avoids gaudy accumulation — preferring clear and restrained tones. Recite Poems in the Moonlight creates a poetic atmosphere through hazy light and shadow — its misty moonlight evoking a distant, lingering mood that accords with the aesthetic pursuit of 'understated and inward, pale and ethereal.' In composition, he draws on the wisdom of Chinese painting's use of empty space — the interplay of void and substance — leaving boundless room for the viewer's imagination. In the creation of mood, he emphasizes 'expressing aspiration through objects,' merging personal emotion, the natural world, and cultural philosophy so that his works possess both visual beauty and spiritual depth."
+           data-cn="王丹一的作品，处处浸润中华美学的独特韵味。色彩表达上，摒弃浓艳堆砌，偏爱清雅素净色调，《月光吟》以朦胧光影营造诗意氛围，月色朦胧、意境悠远，契合传统美学"含蓄内敛、淡雅空灵"的审美追求，借月色抒发静谧心境，实现情景交融、物我合一；构图布局上，汲取中国画"留白"智慧，虚实相生、疏密有致，画面简洁而意蕴丰富，给观者留下无限想象空间，尽显中式美学的空灵之美；意境营造上，注重托物言志、寓理于情，将个人情感、自然万物、文化哲思相融，让作品既有视觉美感，又有精神深度，传递中华美学的独特价值。">
+          王丹一的作品，处处浸润中华美学的独特韵味。色彩表达上，摒弃浓艳堆砌，偏爱清雅素净色调，《月光吟》以朦胧光影营造诗意氛围，月色朦胧、意境悠远，契合传统美学"含蓄内敛、淡雅空灵"的审美追求，借月色抒发静谧心境，实现情景交融、物我合一；构图布局上，汲取中国画"留白"智慧，虚实相生、疏密有致，画面简洁而意蕴丰富，给观者留下无限想象空间，尽显中式美学的空灵之美；意境营造上，注重托物言志、寓理于情，将个人情感、自然万物、文化哲思相融，让作品既有视觉美感，又有精神深度，传递中华美学的独特价值。
+        </p>
+      </div>
+
+      <!-- V -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="V" data-cn="五">V</p>
+        <h2 class="art-chapter-heading"
+            data-en="The Era Calls for Responsibility"
+            data-cn="时代召唤担当，笔墨映照初心">
+          时代召唤担当，笔墨映照初心
+        </h2>
+        <p data-en="With a profound awareness of the times and a deep sense of mission, Wang Danyi channels his personal artistic pursuit into the current of national development — his creation tightly connected to the themes, marks, and spirit of the era, using his brush to record historical change, sing the spirit of the nation, and rally the strength to forge ahead. He has always been in step with the era and linked to the fate of the nation — from historical memory to the face of the times, from cultural inheritance to the elevation of spirit, every work suffused with patriotic sentiment and era-specific responsibility."
+           data-cn="时代召唤担当，笔墨映照初心。王丹一以高度的时代自觉与使命担当，将个人艺术追求融入民族发展洪流，创作紧扣时代主题、镌刻时代印记、彰显民族精神，用画笔记录时代变迁、讴歌民族风骨、凝聚奋进力量，成为振奋民族精神、传递时代强音的重要力量。他始终与时代同频共振、与民族命运相连，从历史记忆到时代风貌，从文化传承到精神弘扬，每一幅作品都饱含家国情怀、彰显时代担当。">
+          时代召唤担当，笔墨映照初心。王丹一以高度的时代自觉与使命担当，将个人艺术追求融入民族发展洪流，创作紧扣时代主题、镌刻时代印记、彰显民族精神，用画笔记录时代变迁、讴歌民族风骨、凝聚奋进力量，成为振奋民族精神、传递时代强音的重要力量。他始终与时代同频共振、与民族命运相连，从历史记忆到时代风貌，从文化传承到精神弘扬，每一幅作品都饱含家国情怀、彰显时代担当。
+        </p>
+        <p data-en="Not Memory Far Away looks back on the nation's path of struggle — commemorating the sacrifice and dedication of forebears, the image heavy and deep, transmitting the spiritual strength to remember history and press forward. In Misty Rain and Warm Sun, offered in celebration of the 70th anniversary of the founding of the PRC, conveys a deep love of the motherland through gentle, elegant imagery. Yu Slays Fangfeng delves into the myths of Chinese civilization, expressing the spiritual genes of the Chinese nation — reverence for nature, moral virtue, and ceaseless self-improvement — giving form to the profound cultural foundations and spiritual elevation of the nation."
+           data-cn="《并非遥远的记忆》回望民族奋斗历程，铭记先辈牺牲奉献，画面厚重深沉、情感真挚浓烈，传递铭记历史、砥砺前行的精神力量，唤醒民族记忆、凝聚奋进共识；《沧浪烟雨卧暖阳》献礼新中国成立70周年，以温婉雅致的画面、悠远宁静的意境，传递对祖国的深情热爱、对美好生活的向往追求，彰显新时代的蓬勃生机；《禹诛防风氏》深挖中华创世神话，展现中华民族敬畏自然、崇德向善、自强不息的精神基因，彰显民族文化的深厚底蕴与精神高度，凝聚民族认同、振奋民族精神。">
+          《并非遥远的记忆》回望民族奋斗历程，铭记先辈牺牲奉献，画面厚重深沉、情感真挚浓烈，传递铭记历史、砥砺前行的精神力量，唤醒民族记忆、凝聚奋进共识；《沧浪烟雨卧暖阳》献礼新中国成立70周年，以温婉雅致的画面、悠远宁静的意境，传递对祖国的深情热爱、对美好生活的向往追求，彰显新时代的蓬勃生机；《禹诛防风氏》深挖中华创世神话，展现中华民族敬畏自然、崇德向善、自强不息的精神基因，彰显民族文化的深厚底蕴与精神高度，凝聚民族认同、振奋民族精神。
+        </p>
+      </div>
+
+      <!-- VI -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="VI" data-cn="六">VI</p>
+        <h2 class="art-chapter-heading"
+            data-en="Art Comes from the People"
+            data-cn="艺术源于人民，创作服务人民">
+          艺术源于人民，创作服务人民
+        </h2>
+        <p data-en="Wang Danyi has always upheld a people-centered stance, adhering to the original mission of 'art for the people.' He is rooted in the lives of the people, close to the feelings of the masses, and responsive to popular expectations — his creative work springing from life, serving the people, and suffused with warmth. With works that have both warmth and depth and that achieve genuine resonance, he nourishes the spiritual world of the people and fulfills their aesthetic needs, demonstrating the true character and people-oriented spirit of a people's artist."
+           data-cn="艺术源于人民，创作服务人民。王丹一始终坚守人民立场，秉持"艺术为人民"的初心使命，扎根人民生活、贴近群众情感、回应大众期盼，创作源于生活、服务人民、饱含温情，用有温度、有情怀、有共鸣的作品滋养人民精神世界、满足人民审美需求，生动诠释人民艺术家的初心本色与为民情怀。">
+          艺术源于人民，创作服务人民。王丹一始终坚守人民立场，秉持"艺术为人民"的初心使命，扎根人民生活、贴近群众情感、回应大众期盼，创作源于生活、服务人民、饱含温情，用有温度、有情怀、有共鸣的作品滋养人民精神世界、满足人民审美需求，生动诠释人民艺术家的初心本色与为民情怀。
+        </p>
+        <p data-en="Daughter of the Sea focuses on the ordinary life — conveying tender regard for individual worth and the dignity of life, softening grand narrative in favor of human warmth, generating emotional resonance with the public. For Forgotten Memories commemorates the people's path of struggle and their sacrifice — paying tribute to ordinary heroes. In Azure focuses on the good life — expressing a longing for blue skies and a happy existence, its fresh imagery and open mood attuned to the people's aspirations for a beautiful life, transmitting a positive attitude toward life."
+           data-cn="《海的女儿》聚焦平凡生命，传递对个体价值、生命尊严的温情关怀，笔触细腻、情感真挚，弱化宏大叙事、强化人性温度，引发大众情感共鸣；《为了忘却的记忆》铭记人民的奋斗历程与牺牲奉献，致敬平凡英雄、传承奋斗精神，唤起大众对历史的敬畏、对先辈的缅怀；《相约蔚蓝》聚焦美好生活，抒发对蓝天碧海、幸福生活的向往追求，画面清新明快、意境开阔明朗，贴合人民对美好生活的期待向往，传递积极向上的生活态度。">
+          《海的女儿》聚焦平凡生命，传递对个体价值、生命尊严的温情关怀，笔触细腻、情感真挚，弱化宏大叙事、强化人性温度，引发大众情感共鸣；《为了忘却的记忆》铭记人民的奋斗历程与牺牲奉献，致敬平凡英雄、传承奋斗精神，唤起大众对历史的敬畏、对先辈的缅怀；《相约蔚蓝》聚焦美好生活，抒发对蓝天碧海、幸福生活的向往追求，画面清新明快、意境开阔明朗，贴合人民对美好生活的期待向往，传递积极向上的生活态度。
+        </p>
+      </div>
+
+      <!-- VII -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="VII" data-cn="七">VII</p>
+        <h2 class="art-chapter-heading"
+            data-en="Upholding Integrity While Innovating"
+            data-cn="守正方能固本，创新方可致远">
+          守正方能固本，创新方可致远
+        </h2>
+        <p data-en="As an outstanding representative of integrity and innovation in contemporary art, Wang Danyi takes deep traditional foundations as his base and a spirit of breakthrough and exploration as his engine — breaking through multiple boundaries of artistic genre, cultural geography, and creative form. His 'upholding integrity while innovating' is not rigid preservation of the old, nor blind overturning of the new, but a creative practice rooted in tradition and committed to exploration."
+           data-cn="守正方能固本，创新方可致远。王丹一作为当代艺术领域守正创新的杰出代表，以深厚传统底蕴为根基、以突破探索精神为动力，打破艺术门类、文化地域、创作形式的多重边界，实现艺术创作的多元突破与深度拓展，为当代艺术创新发展树立典范、提供宝贵范式。他对传统的"守正"，不是固步自封、墨守成规，而是深耕精髓、坚定根基；对创作的"创新"，不是盲目颠覆、脱离根本，而是立足传统、勇于探索。">
+          守正方能固本，创新方可致远。王丹一作为当代艺术领域守正创新的杰出代表，以深厚传统底蕴为根基、以突破探索精神为动力，打破艺术门类、文化地域、创作形式的多重边界，实现艺术创作的多元突破与深度拓展，为当代艺术创新发展树立典范、提供宝贵范式。他对传统的"守正"，不是固步自封、墨守成规，而是深耕精髓、坚定根基；对创作的"创新"，不是盲目颠覆、脱离根本，而是立足传统、勇于探索。
+        </p>
+        <p data-en="In the fusion of artistic genres, he spans oil painting, Chinese painting, mineral pigment painting, woodblock printmaking, and illustration — achieving a multivalent artistic language where different forms empower one another. He is proficient in the ink spirit and linear rhythm of traditional painting, deeply versed in the chiaroscuro and chromatic layers of oil painting, and skilled in the textural quality and narrative force of printmaking. At the level of technical innovation, he boldly fuses Western oil painting's contrast of light and dark with the expressive freedom, empty space, and mood-creation of Eastern art — allowing traditional art to radiate a modern vitality and Western artistic language to carry Eastern cultural meaning."
+           data-cn="在艺术门类融合上，王丹一打破单一画种的局限，跨界油画、中国画、岩彩画、木刻版画、插图等多个领域，实现艺术语言的多元融合、相互赋能。他精通传统书画的笔墨意境、线条韵味，深谙油画的光影明暗、色彩层次，擅长版画的肌理质感、叙事张力，不同门类的艺术特质在他笔下相互交融、相得益彰，形成独树一帜、辨识度极高的艺术风格。技法创新层面，他大胆将西方油画的明暗对比、色彩叠加技法，与东方艺术的写意留白、意境营造智慧相融，让传统艺术焕发现代活力，让西方艺术语言承载东方文化内涵，实现技法层面的深度突破与创新。">
+          在艺术门类融合上，王丹一打破单一画种的局限，跨界油画、中国画、岩彩画、木刻版画、插图等多个领域，实现艺术语言的多元融合、相互赋能。他精通传统书画的笔墨意境、线条韵味，深谙油画的光影明暗、色彩层次，擅长版画的肌理质感、叙事张力，不同门类的艺术特质在他笔下相互交融、相得益彰，形成独树一帜、辨识度极高的艺术风格。技法创新层面，他大胆将西方油画的明暗对比、色彩叠加技法，与东方艺术的写意留白、意境营造智慧相融，让传统艺术焕发现代活力，让西方艺术语言承载东方文化内涵，实现技法层面的深度突破与创新。
+        </p>
+      </div>
+
+      <!-- VIII -->
+      <div class="art-chapter">
+        <p class="art-chapter-num" data-en="VIII" data-cn="八">VIII</p>
+        <h2 class="art-chapter-heading"
+            data-en="Painting as Medium, Culture as Bridge"
+            data-cn="丹青为媒，文化为桥">
+          丹青为媒，文化为桥
+        </h2>
+        <p data-en="Standing on Chinese soil, rooted in Chinese culture, and looking toward the world, Wang Danyi uses painting as his medium and cultural exchange as his mission — speaking China's story in artistic language, transmitting China's voice, and presenting China's image. He has become a model for showing the world a credible, lovable, and admirable China. His works carry vivid Chinese elements, deep cultural foundations, and a distinctive national character — they are both a living vessel of Chinese civilization and an important window through which the world can understand, know, and identify with China."
+           data-cn="丹青为媒，文化为桥；讲好中国故事，展现中国形象。王丹一立足中国大地、扎根中华文化、心怀世界视野，以丹青笔墨为媒介、以文化交流为使命，用艺术语言讲述中国故事、传递中国声音、展现中国形象，成为向世界展现可信、可爱、可敬中国的典范。他的作品饱含鲜明中国元素、深厚文化底蕴、独特民族风骨，既是中华文化的生动载体，也是世界读懂中国、理解中国、认同中国的重要窗口。">
+          丹青为媒，文化为桥；讲好中国故事，展现中国形象。王丹一立足中国大地、扎根中华文化、心怀世界视野，以丹青笔墨为媒介、以文化交流为使命，用艺术语言讲述中国故事、传递中国声音、展现中国形象，成为向世界展现可信、可爱、可敬中国的典范。他的作品饱含鲜明中国元素、深厚文化底蕴、独特民族风骨，既是中华文化的生动载体，也是世界读懂中国、理解中国、认同中国的重要窗口。
+        </p>
+        <p data-en="Yu Slays Fangfeng delves into the myths of Chinese civilization to narrate the wisdom crystallized in China's ancient civilization and its spiritual core — presenting a credible China that is historically weighty, culturally deep, and spiritually elevated. In Misty Rain and Warm Sun presents the mood and realm of traditional Chinese landscape, conveying Eastern wisdom about harmony between humanity and nature, showing a lovable China that is warm, inclusive, and poetic. Not Memory Far Away looks back on the nation's path of struggle — commemorating the spirit of pressing forward through hardship — presenting an admirable China that is resilient, undaunted, and self-reliant."
+           data-cn="《禹诛防风氏》深挖中华创世神话，讲述中国上古文明的智慧结晶与精神内核，彰显历史厚重、底蕴深厚、精神昂扬的可信中国形象；《沧浪烟雨卧暖阳》呈现中国传统山水意境，传递人与自然和谐共生的东方智慧，展现温润包容、诗意盎然、充满魅力的可爱中国形象；《并非遥远的记忆》回望民族奋斗征程，铭记先辈牺牲奉献、砥砺前行的奋斗精神，彰显坚韧不拔、不畏艰难、自强不息的可敬中国形象。">
+          《禹诛防风氏》深挖中华创世神话，讲述中国上古文明的智慧结晶与精神内核，彰显历史厚重、底蕴深厚、精神昂扬的可信中国形象；《沧浪烟雨卧暖阳》呈现中国传统山水意境，传递人与自然和谐共生的东方智慧，展现温润包容、诗意盎然、充满魅力的可爱中国形象；《并非遥远的记忆》回望民族奋斗征程，铭记先辈牺牲奉献、砥砺前行的奋斗精神，彰显坚韧不拔、不畏艰难、自强不息的可敬中国形象。
+        </p>
+        <p data-en="Wang Danyi uses oil painting — an international artistic language — to carry Chinese cultural meaning and transmit Chinese values, breaking through cultural barriers and language divides so that the world can understand Chinese culture, feel China's appeal, and comprehend China's spirit through color and brushwork. His works, selected many times for major national exhibitions, transmit Chinese values and promote Chinese culture through art — helping Chinese culture to go out into the world. From academic research to creative practice, from traditional inheritance to modern expression, he has always used art as a bridge — connecting China and the world, telling China's story with warmth, depth, and substance."
+           data-cn="王丹一以油画这一国际通用艺术语言，承载中国文化内涵、传递中国价值理念，打破文化隔阂与语言障碍，让世界透过色彩与笔触读懂中国文化、感受中国魅力、理解中国精神。作品多次入选国家级重要展览，以艺术的方式传递中国价值观、展现中国精神、弘扬中华文化，助力中华文化走出去、提升国际影响力。从学术研究到创作实践，从传统传承到现代表达，他始终以艺术为桥，连接中国与世界，讲述有温度、有深度、有厚度的中国故事，让世界更好地了解中国、理解中国、认同中国。">
+          王丹一以油画这一国际通用艺术语言，承载中国文化内涵、传递中国价值理念，打破文化隔阂与语言障碍，让世界透过色彩与笔触读懂中国文化、感受中国魅力、理解中国精神。作品多次入选国家级重要展览，以艺术的方式传递中国价值观、展现中国精神、弘扬中华文化，助力中华文化走出去、提升国际影响力。从学术研究到创作实践，从传统传承到现代表达，他始终以艺术为桥，连接中国与世界，讲述有温度、有深度、有厚度的中国故事，让世界更好地了解中国、理解中国、认同中国。
+        </p>
+      </div>
+
+      <!-- Back link -->
+      <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
+        <a href="about.html#press" class="art-back">
+          &#8592; <span data-en="Back to About" data-cn="返回简介页">Back to About</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name" data-en="Ewen Wang" data-cn="王志 (Ewen Wang)">Ewen Wang</span>
+        <span class="footer-copy"
+              data-en="© 2025 Ewen Wang. All rights reserved."
+              data-cn="© 2025 王志。版权所有。">© 2025 Ewen Wang. All rights reserved.</span>
+        <span class="footer-contact">
+          <a href="mailto:serverqaq@gmail.com">serverqaq@gmail.com</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var mobileLang = document.getElementById('lang-toggle-mobile');
+      var mainLang   = document.getElementById('lang-toggle');
+      if (mobileLang && mainLang) {
+        mobileLang.addEventListener('click', function() {
+          mainLang.click();
+          mobileLang.textContent = mainLang.textContent;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
