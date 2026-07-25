@@ -220,7 +220,21 @@
     }
   }
 
-  /* ── 7. Enquiry form confirmation ───────────────────────── */
+  /* ── 7a. Guard against an unconfigured form endpoint ────── */
+  /* Until a Formspree form ID is filled in, submitting would land the
+     visitor on a 404 — worse than having no form. Hide it and show the
+     email address instead. Delete this once the action is real. */
+  function initFormGuard() {
+    const form = document.querySelector('.enquiry-form');
+    if (!form) return;
+    if (!/REPLACE_WITH_FORM_ID/.test(form.getAttribute('action') || '')) return;
+
+    form.hidden = true;
+    const fallback = document.getElementById('form-fallback');
+    if (fallback) fallback.hidden = false;
+  }
+
+  /* ── 7b. Enquiry form confirmation ──────────────────────── */
   /* Formspree redirects back here with ?sent=1 after a successful post. */
   function initFormSuccess() {
     if (!/[?&]sent=1(&|$)/.test(window.location.search)) return;
@@ -248,6 +262,7 @@
     initMobileNav();
     initScrollHeader();
     initFadeIn();
+    initFormGuard();
     initFormSuccess();
   });
 

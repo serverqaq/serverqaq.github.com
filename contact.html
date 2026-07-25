@@ -124,6 +124,12 @@
             Thank you — your message has been sent. You will receive a reply by email.
           </div>
 
+          <!-- Shown only while the form has no working endpoint. -->
+          <p id="form-fallback" class="contact-value" hidden style="font-size:.92rem; color:var(--muted);">
+            <span data-en="Please send enquiries to" data-cn="咨询请发送至">Please send enquiries to</span>
+            <a href="mailto:ewenwangye@gmail.com">ewenwangye@gmail.com</a>
+          </p>
+
           <form class="enquiry-form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
             <input type="hidden" name="_next" value="https://www.wdanyi.com/contact.html?sent=1">
             <input type="hidden" name="_subject" value="Website enquiry — wdanyi.com">
