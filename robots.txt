@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Retired press feature — kept for reference, not for indexing.
+Disallow: /press-chuangrong-2025.html
+
+Sitemap: https://www.wdanyi.com/sitemap.xml

@@ -1,0 +1,6 @@
+# Internal working documents — must never be published.
+# GitHub Pages serves everything committed to this repo, so anything
+# committed here becomes publicly downloadable at www.wdanyi.com/<path>.
+research/
+.codex/
+.claude/
