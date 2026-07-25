@@ -105,26 +105,59 @@
           <div>
             <p class="contact-label" data-en="For Inquiries" data-cn="咨询事项">For Inquiries</p>
             <p class="contact-value" style="font-size:.9rem; color:var(--muted);"
-               data-en="For commissions, exhibition inquiries, press, and licensing, please reach out by email."
-               data-cn="如需委托创作、展览合作、媒体采访或版权授权，请通过邮件与我们联系。">
-              For commissions, exhibition inquiries, press, and licensing, please reach out by email.
+               data-en="For enquiries about available works, exhibitions, press and licensing, use the form or write directly by email."
+               data-cn="作品询价、展览合作、媒体采访或版权授权，可通过右侧表单或直接邮件联系。">
+              For enquiries about available works, exhibitions, press and licensing, use the form or write directly by email.
             </p>
           </div>
 
         </div>
 
-        <!-- Right: Map -->
+        <!-- Right: Enquiry form -->
         <div class="fade-up">
           <p class="contact-label" style="margin-bottom:.8rem;"
-             data-en="Location" data-cn="位置">Location</p>
-          <div class="map-wrap">
-            <iframe
-              src="https://maps.google.com/maps?q=%E5%AE%8B%E5%BA%84&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              title="Jingzhong Academy location"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+             data-en="Send an Enquiry" data-cn="在线咨询">Send an Enquiry</p>
+
+          <div id="form-success" class="form-success" hidden
+               data-en="Thank you — your message has been sent. You will receive a reply by email."
+               data-cn="已收到您的留言，我们会尽快通过邮件回复。">
+            Thank you — your message has been sent. You will receive a reply by email.
           </div>
+
+          <form class="enquiry-form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+            <input type="hidden" name="_next" value="https://www.wdanyi.com/contact.html?sent=1">
+            <input type="hidden" name="_subject" value="Website enquiry — wdanyi.com">
+            <!-- honeypot -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field">
+              <label for="f-name" data-en="Name" data-cn="姓名">Name</label>
+              <input id="f-name" name="name" type="text" required autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="f-email" data-en="Email" data-cn="邮箱">Email</label>
+              <input id="f-email" name="email" type="email" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="f-topic" data-en="Subject" data-cn="咨询类型">Subject</label>
+              <select id="f-topic" name="topic">
+                <option value="Work enquiry" data-en="Enquiry about a work" data-cn="作品咨询">Enquiry about a work</option>
+                <option value="Exhibition" data-en="Exhibition / gallery" data-cn="展览与画廊合作">Exhibition / gallery</option>
+                <option value="Press" data-en="Press" data-cn="媒体采访">Press</option>
+                <option value="Other" data-en="Other" data-cn="其他">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message" data-en="Message" data-cn="留言">Message</label>
+              <textarea id="f-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit"
+                    data-en="Send" data-cn="发送">Send</button>
+          </form>
         </div>
 
       </div>

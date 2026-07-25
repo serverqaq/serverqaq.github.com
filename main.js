@@ -220,6 +220,26 @@
     }
   }
 
+  /* ── 7. Enquiry form confirmation ───────────────────────── */
+  /* Formspree redirects back here with ?sent=1 after a successful post. */
+  function initFormSuccess() {
+    if (!/[?&]sent=1(&|$)/.test(window.location.search)) return;
+
+    const box = document.getElementById('form-success');
+    const form = document.querySelector('.enquiry-form');
+    if (box) {
+      box.hidden = false;
+      box.setAttribute('role', 'status');
+    }
+    if (form) form.reset();
+
+    // Drop the query string so a refresh doesn't re-show the message.
+    if (window.history.replaceState) {
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+    if (box) box.scrollIntoView({ block: 'center' });
+  }
+
   /* ── Init all ───────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function () {
     initLang();
@@ -228,6 +248,7 @@
     initMobileNav();
     initScrollHeader();
     initFadeIn();
+    initFormSuccess();
   });
 
 })();

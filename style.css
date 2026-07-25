@@ -3,8 +3,85 @@
    Custom stylesheet, no frameworks
    ============================================================ */
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap');
+/* ============================================================
+   Self-hosted webfonts (Playfair Display, Inter — both SIL OFL).
+   Previously loaded via @import from fonts.googleapis.com, which is
+   blocked in mainland China and blocked rendering for roughly half
+   of this site's audience. Latin + Latin-Ext subsets only; CJK text
+   falls through to the system stacks declared in style.css.
+   ============================================================ */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/inter-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/inter-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/playfair-display-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/playfair-display-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/playfair-display-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/playfair-display-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
@@ -14,8 +91,9 @@
   --accent:    #856B4E;
   --muted:     #6B6B6B;
   --border:    #E5E0D8;
-  --serif:     'Playfair Display', Georgia, serif;
-  --sans:      'Inter', system-ui, -apple-system, sans-serif;
+  /* CJK falls through to system fonts; no CJK webfont is loaded (would be MBs). */
+  --serif:     'Playfair Display', Georgia, 'Songti SC', 'Source Han Serif SC', 'Noto Serif CJK SC', SimSun, serif;
+  --sans:      'Inter', system-ui, -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   --nav-h:     64px;
 }
 
@@ -588,18 +666,75 @@ h3 { font-size: 1.2rem; }
 .contact-value a { color: var(--text); }
 .contact-value a:hover { color: var(--accent); }
 
-.map-wrap {
-  position: relative;
-  padding-bottom: 60%;
-  height: 0;
-  overflow: hidden;
+/* ── Enquiry form ───────────────────────────────────────────── */
+.enquiry-form .field { margin-bottom: 1.1rem; }
+
+.enquiry-form label {
+  display: block;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .35rem;
 }
 
-.map-wrap iframe {
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: .95rem;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: .6rem .75rem;
+  transition: border-color .2s;
+}
+
+.enquiry-form input:hover,
+.enquiry-form select:hover,
+.enquiry-form textarea:hover { border-color: var(--muted); }
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.enquiry-form textarea { resize: vertical; min-height: 7rem; }
+
+/* Honeypot — hidden from people, reachable by bots. */
+.enquiry-form input[name="_gotcha"] {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: none;
+  left: -9999px;
+  width: 1px; height: 1px;
+  opacity: 0;
+}
+
+.btn-submit {
+  font-family: var(--sans);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  padding: .65rem 2rem;
+  min-height: 44px;   /* touch target */
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.btn-submit:hover { opacity: .85; }
+
+.form-success {
+  border-left: 3px solid var(--accent);
+  background: rgba(133,107,78,.06);
+  padding: .9rem 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: .92rem;
+  color: var(--text);
 }
 
 /* ── Lightbox ──────────────────────────────────────────────── */
