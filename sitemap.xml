@@ -1,33 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.wdanyi.com/</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>1.0</priority>
+    <loc>https://www.wdanyi.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/index.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
-    <loc>https://www.wdanyi.com/works.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.9</priority>
+    <loc>https://www.wdanyi.com/zh/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/index.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
-    <loc>https://www.wdanyi.com/about.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.wdanyi.com/en/works.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/works.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/works.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
-    <loc>https://www.wdanyi.com/cv.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.7</priority>
+    <loc>https://www.wdanyi.com/zh/works.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/works.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/works.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
-    <loc>https://www.wdanyi.com/statement.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.6</priority>
+    <loc>https://www.wdanyi.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/about.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
   <url>
-    <loc>https://www.wdanyi.com/contact.html</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.6</priority>
+    <loc>https://www.wdanyi.com/zh/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/about.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/en/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/cv.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/zh/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/cv.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/en/statement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/statement.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/statement.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/zh/statement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/statement.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/statement.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/contact.html"/>
+    <lastmod>2026-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wdanyi.com/zh/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wdanyi.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.wdanyi.com/zh/contact.html"/>
+    <lastmod>2026-07-26</lastmod>
   </url>
 </urlset>

@@ -243,8 +243,10 @@ h3 { font-size: 1.2rem; }
 .nav-links a.active,
 .nav-links a:hover { color: var(--accent); }
 
-/* Language toggle */
+/* Language switch — an <a> to the other language tree, not a button. */
 .lang-toggle {
+  display: inline-block;
+  line-height: 1.2;
   background: none;
   border: 1px solid var(--border);
   color: var(--text);
