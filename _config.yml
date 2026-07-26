@@ -1,0 +1,12 @@
+# GitHub Pages publishes everything committed to this repo. Anything listed
+# here is kept out of the built site (it stays in git, it just isn't served).
+#
+# MAINTENANCE.md matters most: it lists the site's own open gaps, and this
+# site exists to be read by galleries and collectors.
+#
+# _src/ needs no entry — Jekyll already skips paths beginning with "_".
+exclude:
+  - build.py
+  - MAINTENANCE.md
+  - README.md
+  - .gitignore
