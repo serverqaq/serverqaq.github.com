@@ -396,6 +396,21 @@ h3 { font-size: 1.2rem; }
    Used by series where the work is taller than it is wide. */
 .artwork-card--portrait img { aspect-ratio: 3/4; }
 
+/* Standing note under a series heading — catalogue detail on request. */
+.series-note {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.series-note a {
+  margin-left: .5rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.series-note a:hover { border-color: var(--accent); }
+
 .artwork-card__info {
   position: absolute;
   bottom: 0; left: 0; right: 0;
